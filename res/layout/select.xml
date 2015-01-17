@@ -1,0 +1,555 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F8F8F8"
+    tools:context=".SelectActivity" >
+    
+    <com.damy.excelfilereader.MultiSpinner
+        android:id="@+id/spinSelect_Detail"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/detail" />
+    
+    <TextView
+        android:id="@+id/lblSelect_KindTitle"
+        android:layout_width="90px"
+        android:layout_height="70px"
+        android:layout_alignTop="@+id/spinSelect_Detail"
+        android:layout_toRightOf="@+id/spinSelect_Detail"
+        android:layout_marginLeft="5px"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/Select_Kind"
+        android:textColor="#000000"
+        android:textSize="32px" />
+
+    <Spinner
+        android:id="@+id/spinSelect_Kind"
+        android:layout_width="110px"
+        android:layout_height="70px"
+        android:layout_alignTop="@+id/lblSelect_KindTitle"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@+id/lblSelect_KindTitle"
+        android:background="@drawable/edittext_round"
+        android:paddingLeft="5px"
+        android:prompt="@string/Select_KindPrompt" />
+    
+    <TextView
+        android:id="@+id/lblSelect_Birth"
+        android:layout_width="90px"
+        android:layout_height="70px"
+        android:layout_alignTop="@+id/spinSelect_Kind"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@+id/spinSelect_Kind"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/Select_OrganTitle"
+        android:textColor="#000000"
+        android:textSize="32px" />
+    
+    <EditText
+        android:id="@+id/txtSelect_Unit"
+        android:layout_width="175px"
+        android:layout_height="70px"
+        android:layout_alignTop="@+id/lblSelect_Birth"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="0px"
+        android:layout_toRightOf="@+id/lblSelect_Birth"
+        android:background="@drawable/edittext_round"
+        android:ellipsize="end"
+        android:ems="10"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/lblSelect_Name1"
+        android:layout_width="90px"
+        android:layout_height="70px"
+        android:layout_alignTop="@+id/txtSelect_Unit"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@+id/txtSelect_Unit"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/Select_Name"
+        android:textColor="#000000"
+        android:textSize="32px" />
+
+    <EditText
+        android:id="@+id/txtSelect_Name"
+        android:layout_width="195px"
+        android:layout_height="70px"
+        android:layout_alignTop="@+id/lblSelect_Name1"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="0px"
+        android:layout_toRightOf="@+id/lblSelect_Name1"
+        android:background="@drawable/edittext_round"
+        android:ellipsize="end"
+        android:ems="10"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="32px" />
+
+    <RelativeLayout
+        android:id="@+id/rlSelect_Find"
+        android:layout_width="130px"
+        android:layout_height="70px"
+        android:layout_alignTop="@+id/txtSelect_Name"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@+id/txtSelect_Name"
+        android:background="@drawable/graybutton" >
+
+        <ImageView
+            android:id="@+id/imgSelect_Find"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:scaleType="fitCenter"
+            android:src="@drawable/find" />
+
+        <TextView
+            android:id="@+id/lblSelect_Find"
+            android:layout_width="105px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgSelect_Find"
+            android:gravity="center"
+            android:text="@string/Select_Find"
+            android:textColor="#000000"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSelect_AdvancedFind"
+        android:layout_width="130px"
+        android:layout_height="70px"
+        android:layout_alignTop="@+id/rlSelect_Find"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="0px"
+        android:layout_toRightOf="@+id/rlSelect_Find"
+        android:background="@drawable/graybutton"
+        android:text="@string/Select_AdvancedFind"
+        android:textColor="#000000"
+        android:textSize="28px" />
+
+    <Button
+        android:id="@+id/btnSelect_Delete"
+        android:layout_width="130px"
+        android:layout_height="70px"
+        android:layout_alignBaseline="@+id/btnSelect_AdvancedFind"
+        android:layout_alignBottom="@+id/btnSelect_AdvancedFind"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@+id/btnSelect_AdvancedFind"
+        android:background="@drawable/graybutton"
+        android:text="@string/Select_Delete"
+        android:textColor="#000000"
+        android:textSize="28px" />
+
+    <RelativeLayout
+        android:layout_width="1270px"
+        android:layout_height="1px"
+        android:layout_alignLeft="@+id/spinSelect_Detail"
+        android:layout_below="@+id/spinSelect_Detail"
+        android:layout_marginTop="10px"
+        android:background="#000000" >
+    </RelativeLayout>
+    
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/spinSelect_Detail"
+        android:layout_below="@+id/spinSelect_Detail"
+        android:layout_marginTop="20px" >
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+		    <RelativeLayout
+		        android:id="@+id/relativeLayout2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="50px"
+		        android:layout_alignLeft="@+id/spinSelect_Detail"
+		        android:layout_marginLeft="0px" >
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_No"
+		            android:layout_width="100px"
+		            android:layout_height="fill_parent"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_NoTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		
+		        <TextView
+		            android:id="@+id/lblSelect_Name"
+		            android:layout_width="150px"
+		            android:layout_height="fill_parent"
+		            android:layout_toRightOf="@+id/lblSelect_No"
+		            android:layout_centerVertical="true"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_Name"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		
+		        <TextView
+		            android:id="@+id/lblSelect_Property"
+		            android:layout_width="170px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_Name"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_PropertyTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		
+		        <TextView
+		            android:id="@+id/lblSelect_Organ"
+		            android:layout_width="230px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_Property"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_OrganTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		
+		        <TextView
+		            android:id="@+id/lblSelect_Job"
+		            android:layout_width="620px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_Organ"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_JobTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		
+		        <TextView
+		            android:id="@+id/lblSelect_JobLevel"
+		            android:layout_width="150px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_Job"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_JobLevelTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		
+		        <TextView
+		            android:id="@+id/lblSelect_Birthday"
+		            android:layout_width="200px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_JobLevel"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_BirthdayTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_Gender"
+		            android:layout_width="100px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_Birthday"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_GenderTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_Nation"
+		            android:layout_width="150px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_Gender"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_NationTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_OriginDomicile"
+		            android:layout_width="300px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_Nation"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_OriginDomicileTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_Homeland"
+		            android:layout_width="300px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_OriginDomicile"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_HomelandTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_WorkDate"
+		            android:layout_width="250px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_Homeland"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_WorkDateTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_PartyDate"
+		            android:layout_width="250px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_WorkDate"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_PartyDateTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_StudyHistory"
+		            android:layout_width="200px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_PartyDate"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_StudyHistoryTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_GraduateSchool"
+		            android:layout_width="500px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_StudyHistory"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_GraduateSchoolTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_CurrentJobDate"
+		            android:layout_width="250px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_GraduateSchool"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_CurrentJobDateTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_CurrentJobLevelDate"
+		            android:layout_width="250px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_CurrentJobDate"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_CurrentJobLevelDateTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_JobName"
+		            android:layout_width="300px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_CurrentJobLevelDate"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_JobNameTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_ManagerKind"
+		            android:layout_width="350px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_JobName"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_ManagerKindTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_Note1"
+		            android:layout_width="150px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_ManagerKind"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_NoteTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_Note2"
+		            android:layout_width="150px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_Note1"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_NoteTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_Note3"
+		            android:layout_width="150px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_Note2"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_NoteTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_Note4"
+		            android:layout_width="150px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_Note3"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_NoteTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_Note5"
+		            android:layout_width="150px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_Note4"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_NoteTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_FullTimeSystem"
+		            android:layout_width="250px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_Note5"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_FullTimeSystemTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		        <TextView
+		            android:id="@+id/lblSelect_Degree"
+		            android:layout_width="300px"
+		            android:layout_height="fill_parent"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/lblSelect_FullTimeSystem"
+		            android:background="@drawable/edittext_round"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:text="@string/Select_DegreeTitle"
+		            android:textColor="#000000"
+		            android:textSize="32px" />
+		        
+		    </RelativeLayout>
+	
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:layout_below="@+id/relativeLayout2"
+	            android:layout_marginTop="0px"
+	            android:orientation="horizontal" >
+	            
+	            <ListView
+	                android:id="@+id/listSelect_Datas"
+	                android:layout_width="wrap_content"
+	                android:layout_height="fill_parent"
+	                android:fastScrollEnabled="true"
+	                android:scrollbars="horizontal"
+	                android:scrollingCache="true" >
+		
+		    </ListView>
+	            
+	        </RelativeLayout>
+	        
+	    </RelativeLayout>
+        
+    </HorizontalScrollView>    
+
+</RelativeLayout>

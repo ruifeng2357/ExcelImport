@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llFindItemsLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="40px" >
+    
+    <TextView
+        android:id="@+id/lblFindItems_No"
+        android:layout_width="100px"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="32px"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/lblFindItems_Name"
+        android:layout_width="150px"
+        android:layout_height="fill_parent"
+       android:layout_toRightOf="@+id/lblFindItems_No"
+        android:layout_centerVertical="true"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="32px"
+        android:visibility="visible" />
+
+   <TextView
+       android:id="@+id/lblFindItems_Property"
+       android:layout_width="170px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_Name"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+
+   <TextView
+       android:id="@+id/lblFindItems_Origan"
+       android:layout_width="230px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_Property"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:paddingLeft="5px"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+
+   <TextView
+       android:id="@+id/lblFindItems_Job"
+       android:layout_width="620px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_Origan"
+       android:background="@drawable/edittext_round"
+       android:gravity="left"
+       android:paddingLeft="5px"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+
+   <TextView
+       android:id="@+id/lblFindItems_JobLevel"
+       android:layout_width="150px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_Job"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+
+   <TextView
+       android:id="@+id/lblFindItems_Birthday"
+       android:layout_width="200px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_JobLevel"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_Gender"
+       android:layout_width="100px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_Birthday"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_Nation"
+       android:layout_width="150px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_Gender"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_OriginDomicile"
+       android:layout_width="300px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_Nation"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_Homeland"
+       android:layout_width="300px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_OriginDomicile"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_WorkDate"
+       android:layout_width="250px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_Homeland"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_PartyDate"
+       android:layout_width="250px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_WorkDate"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_StudyHistory"
+       android:layout_width="200px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_PartyDate"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_GraduateSchool"
+       android:layout_width="500px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_StudyHistory"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_CurrentJobDate"
+       android:layout_width="250px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_GraduateSchool"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_CurrentJobLevelDate"
+       android:layout_width="250px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_CurrentJobDate"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_JobName"
+       android:layout_width="300px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_CurrentJobLevelDate"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_ManagerKind"
+       android:layout_width="350px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_JobName"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_Note1"
+       android:layout_width="150px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_ManagerKind"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_Note2"
+       android:layout_width="150px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_Note1"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_Note3"
+       android:layout_width="150px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_Note2"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_Note4"
+       android:layout_width="150px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_Note3"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_Note5"
+       android:layout_width="150px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_Note4"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_FullTimeSystem"
+       android:layout_width="250px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_Note5"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+   
+   <TextView
+       android:id="@+id/lblFindItems_Degree"
+       android:layout_width="300px"
+       android:layout_height="fill_parent"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/lblFindItems_FullTimeSystem"
+       android:background="@drawable/edittext_round"
+       android:gravity="center"
+       android:singleLine="true"
+       android:textColor="#000000"
+       android:textSize="32px" />
+
+</RelativeLayout>

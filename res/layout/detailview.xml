@@ -1,0 +1,1085 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlDetailView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:scrollbars="horizontal|vertical"
+    tools:context=".DetailViewActivity" >
+    
+    <ImageView
+        android:id="@+id/imgDetailView_Photo"
+        android:layout_width="100px"
+        android:layout_height="130px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@+id/lblDetailView_BirthdayValue"
+        android:background="@drawable/edittext_round"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitCenter"
+        android:src="@drawable/defaultphoto" />
+    
+     <TextView
+        android:id="@+id/lblDetailView_Name"
+        android:layout_width="70px"
+        android:layout_height="40px"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="5px"
+	    android:layout_marginTop="10px"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:text="@string/Select_NameTitle"
+        android:textColor="#808080"
+        android:textSize="20px" />
+	
+	<TextView
+	    android:id="@+id/lblDetailView_NameValue"
+	    android:layout_width="100px"
+	    android:layout_height="40px"
+	    android:layout_alignTop="@+id/lblDetailView_Name"
+	    android:layout_toRightOf="@+id/lblDetailView_Name"
+	    android:background="@drawable/edittext_round"
+	    android:gravity="center"
+	    android:textColor="#000000"
+	    android:textSize="20px" />
+	
+	<TextView
+	    android:id="@+id/lblDetailView_Gender"
+	    android:layout_width="70px"
+	    android:layout_height="40px"
+	    android:layout_alignTop="@+id/lblDetailView_NameValue"
+	    android:layout_toRightOf="@+id/lblDetailView_NameValue"
+	    android:background="@drawable/edittext_round"
+	    android:gravity="center"
+	    android:text="@string/Select_GenderTitle"
+	          android:textColor="#808080"
+	    android:textSize="20px" />
+	
+	<TextView
+	    android:id="@+id/lblDetailView_GenderValue"
+	    android:layout_width="100px"
+	    android:layout_height="40px"
+	    android:layout_alignTop="@+id/lblDetailView_Gender"
+	    android:layout_toRightOf="@+id/lblDetailView_Gender"
+	    android:background="@drawable/edittext_round"
+	    android:gravity="center"
+	    android:textColor="#000000"
+	    android:textSize="20px" />
+	
+	<TextView
+	    android:id="@+id/lblDetailView_Birthday"
+	    android:layout_width="95px"
+	    android:layout_height="40px"
+	    android:layout_alignTop="@+id/lblDetailView_GenderValue"
+	    android:layout_toRightOf="@+id/lblDetailView_GenderValue"
+	    android:background="@drawable/edittext_round"
+	    android:gravity="center"
+		android:textColor="#808080"
+	    android:textSize="20px"
+	    android:text="@string/Select_BirthdayTitle" />
+	
+	<TextView
+	    android:id="@+id/lblDetailView_BirthdayValue"
+	    android:layout_width="100px"
+	    android:layout_height="40px"
+	    android:layout_alignTop="@+id/lblDetailView_Birthday"
+	    android:layout_toRightOf="@+id/lblDetailView_Birthday"
+	    android:background="@drawable/edittext_round"
+	    android:gravity="center"
+	    android:textColor="#000000"
+	    android:textSize="20px" />
+	
+	<TextView
+        android:id="@+id/lblDetailView_Nation"
+        android:layout_width="70px"
+        android:layout_height="40px"
+        android:layout_alignLeft="@+id/lblDetailView_Name"
+        android:layout_below="@+id/lblDetailView_Name"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/Select_NationTitle" />
+
+    <TextView
+        android:id="@+id/lblDetailView_NationValue"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Nation"
+        android:layout_toRightOf="@+id/lblDetailView_Nation"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/lblDetailView_OriginDomicile"
+        android:layout_width="70px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_NationValue"
+        android:layout_toRightOf="@+id/lblDetailView_NationValue"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+              android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/Select_OriginDomicileTitle" />
+
+    <TextView
+        android:id="@+id/lblDetailView_OriginDomicileValue"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_OriginDomicile"
+        android:layout_toRightOf="@+id/lblDetailView_OriginDomicile"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/lblDetailView_Homeland"
+        android:layout_width="95px"
+        android:layout_height="40px"
+        android:layout_below="@+id/lblDetailView_Birthday"
+        android:layout_toLeftOf="@+id/lblDetailView_BirthdayValue"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:text="@string/Select_HomelandTitle"
+              android:textColor="#808080"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/lblDetailView_HomelandValue"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignLeft="@+id/lblDetailView_BirthdayValue"
+        android:layout_below="@+id/lblDetailView_BirthdayValue"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px"  />
+    
+    <TextView
+        android:id="@+id/lblDetailView_PartyDate"
+        android:layout_width="70px"
+        android:layout_height="50px"
+        android:layout_alignLeft="@+id/lblDetailView_Name"
+        android:layout_below="@+id/lblDetailView_Nation"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+              android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_PartyDate" />
+
+    <TextView
+        android:id="@+id/lblDetailView_PartyDateValue"
+        android:layout_width="100px"
+        android:layout_height="50px"
+        android:layout_alignLeft="@+id/lblDetailView_NationValue"
+        android:layout_alignTop="@+id/lblDetailView_PartyDate"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/lblDetailView_WorkDate"
+        android:layout_width="70px"
+        android:layout_height="50px"
+        android:layout_alignTop="@+id/lblDetailView_PartyDateValue"
+        android:layout_toRightOf="@+id/lblDetailView_PartyDateValue"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+              android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/Select_WorkDateTitle" />
+
+    <TextView
+        android:id="@+id/lblDetailView_WorkDateValue"
+        android:layout_width="100px"
+        android:layout_height="50px"
+        android:layout_alignTop="@+id/lblDetailView_WorkDate"
+        android:layout_toRightOf="@+id/lblDetailView_WorkDate"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/lblDetailView_HealthState"
+        android:layout_width="95px"
+        android:layout_height="50px"
+        android:layout_alignLeft="@+id/lblDetailView_Homeland"
+        android:layout_alignTop="@+id/lblDetailView_WorkDateValue"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+              android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_HealthState" />
+
+    <TextView
+        android:id="@+id/lblDetailView_HealthStateValue"
+        android:layout_width="100px"
+        android:layout_height="50px"
+        android:layout_alignLeft="@+id/lblDetailView_HomelandValue"
+        android:layout_below="@+id/lblDetailView_HomelandValue"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+     <TextView
+        android:id="@+id/lblDetailView_TechJobLevel"
+        android:layout_width="100px"
+        android:layout_height="50px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5px"
+        android:layout_below="@+id/lblDetailView_PartyDate"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+              android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_TechJobLevel" />
+
+    <TextView
+        android:id="@+id/lblDetailView_TechJobLevelValue"
+        android:layout_width="200px"
+        android:layout_height="50px"
+        android:layout_alignTop="@+id/lblDetailView_TechJobLevel"
+        android:layout_toRightOf="@+id/lblDetailView_TechJobLevel"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/lblDetailView_SpecTime"
+        android:layout_width="100px"
+        android:layout_height="50px"
+        android:layout_toRightOf="@+id/lblDetailView_TechJobLevelValue"
+        android:layout_alignTop="@+id/lblDetailView_TechJobLevelValue"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+              android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_SpecTime" />
+
+    <TextView
+        android:id="@+id/lblDetailView_SpecTimeValue"
+        android:layout_width="235px"
+        android:layout_height="50px"
+        android:layout_toRightOf="@+id/lblDetailView_SpecTime"
+        android:layout_alignTop="@+id/lblDetailView_SpecTime"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+     <TextView
+        android:id="@+id/lblDetailView_StudyHistoryAndDegree"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignLeft="@+id/lblDetailView_TechJobLevel"
+        android:layout_below="@+id/lblDetailView_TechJobLevel"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+              android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_StudyHistoryAndDegree" />
+
+    <TextView
+        android:id="@+id/lblDetailView_FullTimeSystem"
+        android:layout_width="75px"
+        android:layout_height="50px"
+        android:layout_alignLeft="@+id/lblDetailView_TechJobLevelValue"
+        android:layout_alignTop="@+id/lblDetailView_StudyHistoryAndDegree"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+              android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/Select_FullTimeSystemTitle" />
+
+    <TextView
+        android:id="@+id/lblDetailView_OnLineStudy"
+        android:layout_width="75px"
+        android:layout_height="50px"
+        android:layout_below="@+id/lblDetailView_FullTimeSystem"
+        android:layout_toRightOf="@+id/lblDetailView_StudyHistoryAndDegree"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_OnLineStudy" />
+
+    <TextView
+        android:id="@+id/lblDetailView_FullTimeSystemValue"
+        android:layout_width="120px"
+        android:layout_height="50px"
+        android:layout_alignTop="@+id/lblDetailView_FullTimeSystem"
+        android:layout_toRightOf="@+id/lblDetailView_FullTimeSystem"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/lblDetailView_OnLineStudyValue"
+        android:layout_width="120px"
+        android:layout_height="50px"
+        android:layout_toRightOf="@+id/lblDetailView_FullTimeSystem"
+        android:layout_below="@+id/lblDetailView_FullTimeSystemValue"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/lblDetailView_GraduateSchool"
+        android:layout_width="105px"
+        android:layout_height="100px"
+        android:layout_toRightOf="@+id/lblDetailView_OnLineStudyValue"
+        android:layout_alignTop="@+id/lblDetailView_FullTimeSystemValue"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/Select_GraduateSchoolTitle" />
+
+    <TextView
+        android:id="@+id/lblDetailView_GraduateSchoolValue"
+        android:layout_width="235px"
+        android:layout_height="100px"
+        android:layout_toRightOf="@+id/lblDetailView_GraduateSchool"
+        android:layout_alignTop="@+id/lblDetailView_GraduateSchool"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_CurrentJobLevel"
+        android:layout_width="105px"
+        android:layout_height="40px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5px"
+        android:layout_below="@+id/lblDetailView_StudyHistoryAndDegree"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_CurrentJobLevel" />
+    
+    <HorizontalScrollView 
+        android:id="@+id/scrlDetailView_CurrentJobLevelValue"
+        android:layout_width="530px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_CurrentJobLevel"
+        android:layout_toRightOf="@+id/lblDetailView_CurrentJobLevel"
+        android:background="@drawable/edittext_round" >
+
+	    <TextView
+	        android:id="@+id/lblDetailView_CurrentJobLevelValue"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:singleLine="true"
+	        android:gravity="center"
+	        android:paddingLeft="5px"
+	        android:textColor="#000000"
+	        android:textSize="20px" />
+	 
+	 </HorizontalScrollView>
+    
+     <TextView
+        android:id="@+id/lblDetailView_CurrentFutureJobLevel"
+        android:layout_width="105px"
+        android:layout_height="40px"
+        android:layout_alignLeft="@+id/lblDetailView_TechJobLevel"
+        android:layout_below="@+id/lblDetailView_CurrentJobLevel"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_CurrentFutureJobLevel" />
+
+    <TextView
+        android:id="@+id/lblDetailView_CurrentFutureJobLevelValue"
+        android:layout_width="530px"
+        android:layout_height="40px"
+        android:layout_alignLeft="@+id/scrlDetailView_CurrentJobLevelValue"
+        android:layout_alignTop="@+id/lblDetailView_CurrentFutureJobLevel"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/lblDetailView_CurrentFutureExitJobLevel"
+        android:layout_width="105px"
+        android:layout_height="40px"
+        android:layout_alignLeft="@+id/lblDetailView_TechJobLevel"
+        android:layout_below="@+id/lblDetailView_CurrentFutureJobLevel"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+              android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_CurrentFutureExitJobLevel" />
+
+    <TextView
+        android:id="@+id/lblDetailView_CurrentFutureExitJobLevelValue"
+        android:layout_width="530px"
+        android:layout_height="40px"
+        android:layout_alignLeft="@+id/lblDetailView_CurrentFutureJobLevelValue"
+        android:layout_alignTop="@+id/lblDetailView_CurrentFutureExitJobLevel"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_History"
+        android:layout_width="50px"
+        android:layout_height="325px"
+        android:layout_alignLeft="@+id/lblDetailView_TechJobLevel"
+        android:layout_below="@+id/lblDetailView_CurrentFutureExitJobLevel"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+		android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_History" />
+
+    <ScrollView
+        android:id="@+id/scrlDetaiView_History"
+        android:layout_width="585px"
+	    android:layout_height="325px"
+		android:background="@drawable/edittext_round"
+	    android:layout_alignTop="@+id/lblDetailView_History"
+	    android:layout_toRightOf="@+id/lblDetailView_History"
+	    android:orientation="vertical" >
+	    
+        <RelativeLayout 
+	        android:layout_width = "match_parent"
+	        android:layout_height = "match_parent"
+	        android:orientation="vertical" >
+	        
+            <HorizontalScrollView 
+                android:layout_width="750px"
+                android:layout_height="match_parent">
+        
+			    <TextView
+			        android:id="@+id/lblDetailView_HistoryValue"
+			        android:layout_width = "match_parent"
+			        android:layout_height = "match_parent"
+			        android:gravity="left|top"
+			        android:paddingLeft="5px"
+			        android:textColor="#000000"
+			        android:textSize="20px" />
+			    
+			</HorizontalScrollView>
+		    
+	    </RelativeLayout>
+    
+    </ScrollView>
+    
+    <TextView
+        android:id="@+id/lblDetailView_State"
+        android:layout_width="50px"
+        android:layout_height="130px"
+        android:layout_toRightOf="@+id/imgDetailView_Photo"
+        android:layout_marginTop="10px"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_State" />
+    
+    <ScrollView
+        android:id="@+id/scrlDetaiView_State"
+        android:layout_width="585px"
+	    android:layout_height="130px"
+		android:background="@drawable/edittext_round"
+	    android:layout_alignTop="@+id/lblDetailView_State"
+	    android:layout_toRightOf="@+id/lblDetailView_State"
+	    android:orientation="vertical" >
+	    
+        <RelativeLayout 
+	        android:layout_width = "match_parent"
+	        android:layout_height = "match_parent"
+	        android:orientation="vertical" >
+        
+			    <TextView
+			        android:id="@+id/lblDetailView_StateValue"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:gravity="top|left"
+			        android:paddingLeft="5px"
+			        android:paddingRight="5px"
+			        android:paddingTop="5px"
+			        android:textColor="#000000"
+			        android:textSize="20px" />
+		    
+	    </RelativeLayout>
+    
+    </ScrollView>   
+    
+    <TextView
+        android:id="@+id/lblDetailView_YearExamineResult"
+        android:layout_width="50px"
+        android:layout_height="145px"
+        android:layout_alignLeft="@+id/lblDetailView_State"
+        android:layout_below="@+id/lblDetailView_State"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+		android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_YearExamineResult" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_YearExamineResultValue"
+        android:layout_width="585px"
+        android:layout_height="145px"
+        android:layout_alignTop="@+id/lblDetailView_YearExamineResult"
+        android:layout_toRightOf="@+id/lblDetailView_YearExamineResult"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_ExitCause"
+        android:layout_width="50px"
+        android:layout_height="130px"
+        android:layout_alignLeft="@+id/lblDetailView_State"
+        android:layout_below="@+id/lblDetailView_YearExamineResult"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_ExitCause" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_ExitCauseValue"
+        android:layout_width="585px"
+        android:layout_height="130px"
+        android:layout_alignTop="@+id/lblDetailView_ExitCause"
+        android:layout_toRightOf="@+id/lblDetailView_ExitCause"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <!--  -->
+    <TextView
+        android:id="@+id/lblDetailView_Family"
+        android:layout_width="50px"
+        android:layout_height="320px"
+        android:layout_alignLeft="@+id/lblDetailView_ExitCause"
+        android:layout_below="@+id/lblDetailView_ExitCause"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_Family" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Relation"
+        android:layout_width="70px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family"
+        android:layout_toRightOf="@+id/lblDetailView_Family"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+              android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_FamilyRelation" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Name"
+        android:layout_width="85px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Relation"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Relation"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+              android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/Select_NameTitle" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Birthday"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Name"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Name"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+              android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/Select_BirthdayTitle" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Party"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Birthday"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Birthday"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+              android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_FamilyParty" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Job"
+        android:layout_width="230px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Party"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Party"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#808080"
+        android:textSize="20px"
+        android:text="@string/DetailView_FamilyJob" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Relation_1"
+        android:layout_width="70px"
+        android:layout_height="40px"
+        android:layout_toRightOf="@+id/lblDetailView_Family"
+        android:layout_below="@+id/lblDetailView_Family_Relation"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Name_1"
+        android:layout_width="85px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Relation_1"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Relation_1"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Birthday_1"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Name_1"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Name_1"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Party_1"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Birthday_1"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Birthday_1"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <HorizontalScrollView 
+        android:layout_width="230px"
+        android:layout_height="40px"
+	    android:background="@drawable/edittext_round"
+        android:layout_alignTop="@+id/lblDetailView_Family_Party_1"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Party_1" >
+    
+	    <TextView
+	        android:id="@+id/lblDetailView_Family_Job_1"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:paddingLeft="5px"
+	        android:gravity="left|center_vertical"
+	        android:singleLine="true"
+	        android:textColor="#000000"
+	        android:textSize="20px" />
+	    
+    </HorizontalScrollView>
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Relation_2"
+        android:layout_width="70px"
+        android:layout_height="40px"
+        android:layout_toRightOf="@+id/lblDetailView_Family"
+        android:layout_below="@+id/lblDetailView_Family_Relation_1"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Name_2"
+        android:layout_width="85px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Relation_2"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Relation_2"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Birthday_2"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Name_2"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Name_2"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Party_2"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Birthday_2"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Birthday_2"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <HorizontalScrollView 
+        android:layout_width="230px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Party_2"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Party_2"
+        android:background="@drawable/edittext_round" >
+        
+	    <TextView
+	        android:id="@+id/lblDetailView_Family_Job_2"
+	        android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+	        android:paddingLeft="5px"
+	        android:gravity="left|center_vertical"
+	        android:singleLine="true"
+	        android:textColor="#000000"
+	        android:textSize="20px" />
+	    
+	</HorizontalScrollView>
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Relation_3"
+        android:layout_width="70px"
+        android:layout_height="40px"
+        android:layout_toRightOf="@+id/lblDetailView_Family"
+        android:layout_below="@+id/lblDetailView_Family_Relation_2"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Name_3"
+        android:layout_width="85px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Relation_3"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Relation_3"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Birthday_3"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Name_3"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Name_3"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Party_3"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Birthday_3"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Birthday_3"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <HorizontalScrollView 
+        android:layout_width="230px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Party_3"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Party_3"
+        android:background="@drawable/edittext_round" >
+    
+	    <TextView
+	        android:id="@+id/lblDetailView_Family_Job_3"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:paddingLeft="5px"
+	        android:gravity="left|center_vertical"
+	        android:singleLine="true"
+	        android:textColor="#000000"
+	        android:textSize="20px" />
+	    
+	</HorizontalScrollView>
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Relation_4"
+        android:layout_width="70px"
+        android:layout_height="40px"
+        android:layout_toRightOf="@+id/lblDetailView_Family"
+        android:layout_below="@+id/lblDetailView_Family_Relation_3"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Name_4"
+        android:layout_width="85px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Relation_4"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Relation_4"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Birthday_4"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Name_4"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Name_4"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Party_4"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Birthday_4"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Birthday_4"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <HorizontalScrollView 
+        android:layout_width="230px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Party_4"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Party_4"
+        android:background="@drawable/edittext_round" >
+    
+	    <TextView
+	        android:id="@+id/lblDetailView_Family_Job_4"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:paddingLeft="5px"
+	        android:gravity="left|center_vertical"
+	        android:singleLine="true"
+	        android:textColor="#000000"
+	        android:textSize="20px" />
+	    
+	</HorizontalScrollView>
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Relation_5"
+        android:layout_width="70px"
+        android:layout_height="40px"
+        android:layout_toRightOf="@+id/lblDetailView_Family"
+        android:layout_below="@+id/lblDetailView_Family_Relation_4"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Name_5"
+        android:layout_width="85px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Relation_5"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Relation_5"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Birthday_5"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Name_5"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Name_5"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Party_5"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Birthday_5"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Birthday_5"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <HorizontalScrollView 
+        android:layout_width="230px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Party_5"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Party_5"
+        android:background="@drawable/edittext_round" >
+    
+	    <TextView
+	        android:id="@+id/lblDetailView_Family_Job_5"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:paddingLeft="5px"
+	        android:gravity="left|center_vertical"
+	        android:singleLine="true"
+	        android:textColor="#000000"
+	        android:textSize="20px" />
+	    
+	</HorizontalScrollView>
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Relation_6"
+        android:layout_width="70px"
+        android:layout_height="40px"
+        android:layout_toRightOf="@+id/lblDetailView_Family"
+        android:layout_below="@+id/lblDetailView_Family_Relation_5"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Name_6"
+        android:layout_width="85px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Relation_6"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Relation_6"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Birthday_6"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Name_6"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Name_6"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Party_6"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Birthday_6"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Birthday_6"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <HorizontalScrollView 
+        android:layout_width="230px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Party_6"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Party_6"
+        android:background="@drawable/edittext_round" >
+    
+	    <TextView
+	        android:id="@+id/lblDetailView_Family_Job_6"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="left|center_vertical"
+	        android:singleLine="true"
+	        android:paddingLeft="5px"
+	        android:textColor="#000000"
+	        android:textSize="20px" />
+	    
+	</HorizontalScrollView>
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Relation_7"
+        android:layout_width="70px"
+        android:layout_height="40px"
+        android:layout_toRightOf="@+id/lblDetailView_Family"
+        android:layout_below="@+id/lblDetailView_Family_Relation_6"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Name_7"
+        android:layout_width="85px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Relation_7"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Relation_7"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Birthday_7"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Name_7"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Name_7"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+    <TextView
+        android:id="@+id/lblDetailView_Family_Party_7"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Birthday_7"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Birthday_7"
+        android:background="@drawable/edittext_round"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20px" />
+    
+   	<HorizontalScrollView 
+        android:layout_width="230px"
+        android:layout_height="40px"
+        android:layout_alignTop="@+id/lblDetailView_Family_Party_7"
+        android:layout_toRightOf="@+id/lblDetailView_Family_Party_7"
+        android:background="@drawable/edittext_round" >
+    
+	    <TextView
+	        android:id="@+id/lblDetailView_Family_Job_7"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:paddingLeft="5px"
+	        android:gravity="left|center_vertical"
+	        android:singleLine="true"
+	        android:textColor="#000000"
+	        android:textSize="20px" />
+	    
+	</HorizontalScrollView>
+
+</RelativeLayout>

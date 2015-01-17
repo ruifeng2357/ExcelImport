@@ -1,0 +1,919 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".AdvancedFindActivity" >
+
+    <ScrollView
+        android:id="@+id/scrlAdvancedFind"
+        android:layout_width="fill_parent"
+        android:layout_height="660px" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1220px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblAdvancedFind_Manager"
+                android:layout_width="200px"
+                android:layout_height="40px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20px"
+                android:gravity="center_vertical"
+                android:paddingLeft="10px"
+                android:text="@string/AdvancedFind_ManagerTitle"
+                android:textColor="#000000"
+                android:textSize="32px" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="60px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblAdvancedFind_Manager"
+                android:gravity="center_vertical" >
+
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Manager_1"
+                    android:layout_width="200px"
+                    android:layout_height="40px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_ManagerTitle_Show1"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Manager_2"
+                    android:layout_width="260px"
+                    android:layout_height="40px"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Manager_1"
+                    android:text="@string/AdvancedFind_ManagerTitle_Show2"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Manager_3"
+                    android:layout_width="300px"
+                    android:layout_height="40px"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Manager_2"
+                    android:text="@string/AdvancedFind_ManagerTitle_Show3"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lblAdvancedFind_Job"
+                android:layout_width="200px"
+                android:layout_height="40px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_marginTop="20px"
+                android:paddingLeft="10px"
+                android:text="@string/AdvancedFind_JobTitle"
+                android:textColor="#000000"
+                android:textSize="32px" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="60px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblAdvancedFind_Job"
+                android:gravity="center_vertical" >
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Job_1"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_JobTitle_1"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Job_2"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Job_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_JobTitle_2"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Job_3"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Job_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_JobTitle_3"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Job_4"
+                    android:layout_width="150px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Job_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_JobTitle_4"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Job_5"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Job_4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_JobTitle_5"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Job_6"
+                    android:layout_width="180px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Job_5"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_JobTitle_6"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Job_7"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Job_6"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_JobTitle_7"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Job_8"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Job_7"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_JobTitle_8"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/lblAdvancedFind_Canton"
+                android:layout_width="200px"
+                android:layout_height="40px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_marginTop="20px"
+                android:paddingLeft="10px"
+                android:text="@string/AdvancedFind_CantonTitle"
+                android:textColor="#000000"
+                android:textSize="32px" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="60px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblAdvancedFind_Canton"
+                android:gravity="center_vertical" >
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Canton_1"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_CantonTitle_1"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Canton_2"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Canton_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_CantonTitle_2"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Canton_3"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Canton_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_CantonTitle_3"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Canton_4"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Canton_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_CantonTitle_4"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Canton_5"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Canton_4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_CantonTitle_5"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Canton_6"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Canton_5"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_CantonTitle_6"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Canton_7"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Canton_6"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_CantonTitle_7"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Canton_8"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Canton_7"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_CantonTitle_8"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/lblAdvancedFind_Birth"
+                android:layout_width="200px"
+                android:layout_height="40px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout3"
+                android:layout_marginTop="20px"
+                android:paddingLeft="10px"
+                android:text="@string/AdvancedFind_BirthTitle"
+                android:textColor="#000000"
+                android:textSize="32px" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="60px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblAdvancedFind_Birth"
+                android:gravity="center_vertical" >
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Birth_All"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BirthTitle_All"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Birth_1"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Birth_All"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BirthTitle_1"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Birth_2"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Birth_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BirthTitle_2"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Birth_3"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Birth_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BirthTitle_3"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Birth_4"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Birth_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BirthTitle_4"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Birth_5"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Birth_4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BirthTitle_5"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Birth_6"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Birth_5"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BirthTitle_6"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Birth_7"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Birth_6"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BirthTitle_7"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Birth_8"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Birth_7"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BirthTitle_8"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/lblAdvancedFind_Party"
+                android:layout_width="200px"
+                android:layout_height="40px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout4"
+                android:layout_marginTop="20px"
+                android:paddingLeft="10px"
+                android:text="@string/AdvancedFind_PartyTitle"
+                android:textColor="#000000"
+                android:textSize="32px" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="fill_parent"
+                android:layout_height="60px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblAdvancedFind_Party"
+                android:gravity="center_vertical" >
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Party_1"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_PartyTitle_1"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Party_2"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Party_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_PartyTitle_2"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Party_3"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Party_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_PartyTitle_3"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Party_4"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Party_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_PartyTitle_4"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Party_5"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Party_4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_PartyTitle_5"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Party_6"
+                    android:layout_width="150px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Party_5"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_PartyTitle_6"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Party_7"
+                    android:layout_width="170px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Party_6"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_PartyTitle_7"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Party_8"
+                    android:layout_width="180px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Party_7"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_PartyTitle_8"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/lblAdvancedFind_Gender"
+                android:layout_width="200px"
+                android:layout_height="40px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout5"
+                android:layout_marginTop="20px"
+                android:paddingLeft="10px"
+                android:text="@string/AdvancedFind_GenderTitle"
+                android:textColor="#000000"
+                android:textSize="32px" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="fill_parent"
+                android:layout_height="60px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblAdvancedFind_Gender"
+                android:gravity="center_vertical" >
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Gender_1"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_GenderTitle_1"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Gender_2"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Gender_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_GenderTitle_2"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+           </RelativeLayout>
+           
+            <TextView
+                android:id="@+id/lblAdvancedFind_Nation"
+                android:layout_width="200px"
+                android:layout_height="40px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout6"
+                android:layout_marginTop="20px"
+                android:paddingLeft="10px"
+                android:text="@string/AdvancedFind_NationTitle"
+                android:textColor="#000000"
+                android:textSize="32px" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout7"
+                android:layout_width="fill_parent"
+                android:layout_height="60px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblAdvancedFind_Nation"
+                android:gravity="center_vertical" >
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Nation_1"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_NationTitle_1"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Nation_2"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Nation_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_NationTitle_2"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Nation_3"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Nation_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_NationTitle_3"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+           </RelativeLayout>
+           
+            <TextView
+                android:id="@+id/lblAdvancedFind_Career"
+                android:layout_width="200px"
+                android:layout_height="40px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout7"
+                android:layout_marginTop="20px"
+                android:paddingLeft="10px"
+                android:text="@string/AdvancedFind_CareerTitle"
+                android:textColor="#000000"
+                android:textSize="32px" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout8"
+                android:layout_width="fill_parent"
+                android:layout_height="60px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblAdvancedFind_Career"
+                android:gravity="center_vertical" >
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Career_1"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_CareerTitle_1"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Career_2"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Career_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_CareerTitle_2"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Career_3"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Career_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_CareerTitle_3"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Career_4"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Career_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_CareerTitle_4"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Career_5"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Career_4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_CareerTitle_5"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+           </RelativeLayout>
+           
+            <TextView
+                android:id="@+id/lblAdvancedFind_BestCareer"
+                android:layout_width="200px"
+                android:layout_height="40px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout8"
+                android:layout_marginTop="20px"
+                android:paddingLeft="10px"
+                android:text="@string/AdvancedFind_BestCareerTitle"
+                android:textColor="#000000"
+                android:textSize="32px" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout9"
+                android:layout_width="fill_parent"
+                android:layout_height="60px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblAdvancedFind_BestCareer"
+                android:gravity="center_vertical" >
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_BestCareer_1"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BestCareerTitle_1"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_BestCareer_2"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_BestCareer_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BestCareerTitle_2"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_BestCareer_3"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_BestCareer_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BestCareerTitle_3"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_BestCareer_4"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_BestCareer_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BestCareerTitle_4"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_BestCareer_5"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_BestCareer_4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_BestCareerTitle_5"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+           </RelativeLayout>
+           
+            <TextView
+                android:id="@+id/lblAdvancedFind_Degree"
+                android:layout_width="200px"
+                android:layout_height="40px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout9"
+                android:layout_marginTop="20px"
+                android:paddingLeft="10px"
+                android:text="@string/AdvancedFind_DegreeTitle"
+                android:textColor="#000000"
+                android:textSize="32px" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout10"
+                android:layout_width="fill_parent"
+                android:layout_height="60px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblAdvancedFind_Degree"
+                android:gravity="center_vertical" >
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Degree_1"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_DegreeTitle_1"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Degree_2"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Degree_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_DegreeTitle_2"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+                <CheckBox
+                    android:id="@+id/chkAdvancedFind_Degree_3"
+                    android:layout_width="120px"
+                    android:layout_height="40px"
+                    android:layout_toRightOf="@+id/chkAdvancedFind_Degree_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="@string/AdvancedFind_DegreeTitle_3"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+                
+           </RelativeLayout>
+           
+    	</RelativeLayout>
+        
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="660px" >
+
+            <Button
+                android:id="@+id/btnAdvancedFind_Ok"
+                android:layout_width="180px"
+                android:layout_height="70px"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="800px"
+                android:background="@drawable/bluebutton"
+                android:textColor="#FFFFFF"
+                android:textSize="32px"
+                android:text="@string/AdvancedFind_Ok" />
+            
+            <Button
+                android:id="@+id/btnAdvancedFind_Cancel"
+                android:layout_width="180px"
+                android:layout_height="70px"
+                android:layout_toRightOf="@+id/btnAdvancedFind_Ok"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/bluebutton"
+                android:textColor="#FFFFFF"
+                android:textSize="32px"
+                android:text="@string/AdvancedFind_Cancel" />            
+
+    </RelativeLayout>
+
+</RelativeLayout>
